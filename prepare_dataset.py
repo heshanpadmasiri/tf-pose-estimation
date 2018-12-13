@@ -45,5 +45,6 @@ if __name__ == "__main__":
     image_dir = os.path.join(os.getcwd(), 'images')  # todo: set this to the directory with images
     pose_dir = os.path.join(os.getcwd(), 'output')
     images = os.listdir(image_dir)
-    for image in images:
-        get_pose(image_dir,image,pose_dir)
+    for i, image in enumerate(images):
+        print(i, len(images))
+        get_pose(image_dir, image, pose_dir)
